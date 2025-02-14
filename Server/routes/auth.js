@@ -6,7 +6,9 @@ const { register, login } = require("../controllers/registerController")
 
 const authRouter = require("express").Router()
 //   register route
+
 authRouter.post('/register', register)
+
 
 //   login route
 authRouter.post('/login', login)

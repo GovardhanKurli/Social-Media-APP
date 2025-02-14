@@ -7,9 +7,11 @@ const verifyToken = require('../middlewares/auth')
 const commentRouter = require('express').Router()
 
 //GET /:postId: Retrieves all comments for a specific post. The postId parameter is used to find the comments related to that post. The getCommentsFromPost function handles the request.
+
 commentRouter.get('/:postId', getCommentsFromPost)
 
 //POST /: Creates a new comment. The verifyToken middleware is applied to ensure that the request is authenticated before the createComment function processes it.
+
 commentRouter.post('/', verifyToken, createComment)
 
 // DELETE /:commentId: Deletes a comment specified by commentId. The verifyToken middleware ensures that only authenticated users can delete comments, and the deleteComment function handles the deletion logic.
