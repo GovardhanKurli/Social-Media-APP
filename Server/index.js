@@ -33,11 +33,16 @@ const io = new Server(server, {
 
 // Connect to MongoDB database
 mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
 })
   .then(() => console.log('DB connection is a success'))
   .catch((err) => console.error('DB connection error (not connected):', err));
+
+
+// mongoose.connect()
+//   .then(() => console.log('DB connection successful'))
+//   .catch((err) => console.error(' DB connection error:', err));
 
 // Serve static files (e.g., images) from the public/images directory
 app.use('/images', express.static('public/images'));
