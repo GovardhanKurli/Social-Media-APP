@@ -42,7 +42,5 @@ postRouter.put("/dislikePost/:postId", verifyToken, dislikePost)
 
 postRouter.get('/all', getAllPosts); 
 
-//Exports the postRouter instance so it can be used in other parts of the application, typically in the main server file where all routes are integrated.
-
 module.exports = postRouter
 
