@@ -2,9 +2,8 @@
 
 const { getPost, getUserPosts, createPost, updatePost, deletePost, getTimelinePosts, likePost, dislikePost, getAllPosts } = require('../controllers/postController')
 
-//verifyToken: Imports middleware to verify user authentication.
 const verifyToken = require('../middlewares/auth')
-//express: Imports the Express module.
+
 const express = require('express');
 
 
@@ -38,7 +37,7 @@ postRouter.put("/likePost/:postId", verifyToken, likePost)
 
 postRouter.put("/dislikePost/:postId", verifyToken, dislikePost)
 
-// Define the route for retrieving all posts
+
 
 postRouter.get('/all', getAllPosts); 
 
