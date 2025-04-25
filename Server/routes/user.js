@@ -13,5 +13,4 @@ userRouter.put('/unfollow/:id', verifyToken, unfollowUser);
 userRouter.delete('/delete/:id', verifyToken, deleteUser);
 userRouter.get('/search', searchUsers);
 
-// userRouter.get('/search', verifyToken, searchUsers);
 module.exports = userRouter;

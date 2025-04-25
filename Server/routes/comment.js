@@ -1,4 +1,3 @@
-//Imports the functions getCommentsFromPost, deleteComment, toggleLike, and createComment from the commentController module. These functions handle the logic for retrieving, deleting, liking/unliking, and creating comments, respectively.
 //Imports the verifyToken middleware function, which will be used to authenticate requests.
 const { getCommentsFromPost, deleteComment, toggleLike, createComment } = require('../controllers/commentController')
 const verifyToken = require('../middlewares/auth')
