@@ -2,11 +2,13 @@
 
 const { getPost, getUserPosts, createPost, updatePost, deletePost, getTimelinePosts, likePost, dislikePost, getAllPosts } = require('../controllers/postController')
 
+
 const verifyToken = require('../middlewares/auth')
 
 const express = require('express');
 
 
+// postRouter: Creates an Express router instance for managing routes related to posts.
 const postRouter = require('express').Router()
 const userRouter = express.Router();
 
