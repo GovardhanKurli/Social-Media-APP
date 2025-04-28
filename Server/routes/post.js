@@ -8,13 +8,13 @@ const verifyToken = require('../middlewares/auth')
 const express = require('express');
 
 
-// postRouter: Creates an Express router instance for managing routes related to posts.
 const postRouter = require('express').Router()
 const userRouter = express.Router();
 
-//GET /find/:id: Fetches a specific post using the id parameter. The getPost function handles this request.
 postRouter.get("/find/:id", getPost)
 //GET /find/userposts/:id: Retrieves all posts from a specific user using the id parameter. The getUserPosts function handles this request.
+
+
 
 postRouter.get("/find/userposts/:id", getUserPosts)
 //GET /timelinePosts: Fetches posts for the authenticated user’s timeline. The verifyToken middleware ensures that the request is authenticated before processing by getTimelinePosts.
