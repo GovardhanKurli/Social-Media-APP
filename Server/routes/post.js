@@ -12,16 +12,6 @@ const postRouter = require('express').Router()
 const userRouter = express.Router();
 
 postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-// postRouter.get("/find/:id", getPost)
-
 
 
 //GET /find/userposts/:id: Retrieves all posts from a specific user using the id parameter. The getUserPosts function handles this request.
